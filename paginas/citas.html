@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinica Ortiz | Citas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">    
+</head>
+
+<body>
+    <div class="superior">
+        <span class="cinta--cinta__col1">Lunes a Domingo, 24 hrs</span>
+        <span class="cinta--cinta__col2">9611234567 / 9616112345</span>
+        <span class="cinta--cinta__col3">Clinicaortiz@gmail.com</span>
+    </div>
+
+    <div class="menubtn">
+        <i class=" fas fa-bars fa-2x"></i>
+    </div>
+
+    <div class="container">
+        <nav class="nav__main">
+                <a href="../index.html"><img src="../recursos/Logoclinicaortiz.png" class="nav__brand" alt="Logo Clinica"></a>
+                <ul class="nav__menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="conocenos.html">Conocenos</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="citas.html">Citas</a></li>
+                    <li><a href="contactanos.html">Contactanos</a></li>
+                    <li><a href="avisoprivacidad.html">Avisoprivacidad</a></li>
+                </ul>
+                <ul class="nav__Menu--search">
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </li>
+                </ul>
+        </nav>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est magnam sit magni iure et, enim numquam voluptatem. Quos cupiditate praesentium ducimus omnis, fugit dolores ut esse perferendis cumque ipsam quae.
+        Dolorem delectus possimus nemo velit facere libero eum reprehenderit, qui, eos doloremque est labore, explicabo sequi beatae modi asperiores fugiat expedita repellat! Aliquam asperiores quaerat distinctio, officia nobis consequuntur eaque.
+        Culpa quam, odio eius voluptas maxime illum ex! Labore, perferendis? Libero sit quaerat odit itaque culpa et officia atque, optio voluptatibus sapiente blanditiis voluptas totam aperiam assumenda. Pariatur, atque consequuntur.</p>
+
+        <div class="formcontacto">
+            <h2 class="encabezado"><span>Formulario de citas medicas</span></h2>
+            <div class="formcontacto__contenedor">
+                <div class="formcontacto__contenedor--form">
+                    <h3> Agenda tu Cita Medicas</h3>
+                    <form action="get">
+                        <p>
+                            <label for="">Nombre Completo:</label>
+                            <input placeholder="Nombre completo" />
+                        </p>
+                        
+                        <p>
+                            <label for="">Email:</label>
+                            <input type="email" />
+                        </p>                 
+                        <p>
+                            <label for="">Nombre del Acompañante</label>
+                            <input type="text" />
+                        </p>
+                        <p>
+                            <label for="">Dirección</label>
+                            <input type="text" />
+                        </p>
+                        <p>
+                            <label for="">Ciudad</label>
+                            <input type="text" />
+                        </p>
+                        <p>
+                            <label for="">Estado</label>
+                            <input type="text" />
+                        </p>
+                        <p>
+                            <label for="">Telefono Casa:</label>
+                            <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required name="telefono" placeholder="123-456-7890">
+                        </p>
+                        <p>
+                            <label for="">Telefono Celular:</label>
+                            <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required name="telefono" placeholder="123-456-7890">
+                        </p>                        
+                        <p>
+                            <label for="">Edad:</label>
+                            <input type="number" />
+                        </p>
+                        <p>
+                            <label for="">Es tu primera cita:</label>
+                            <select name="cita" id="">
+                                <option value="s">SI</option>
+                                <option value="n">NO</option>                                
+                              </select>
+                            <!-- <input type="select" required placeholder="Selecciona opción"> -->
+                        </p>                        
+                        <p>
+                            <label for="">Tipo de Cita:</label>
+                            <select name="tipocita" id="">
+                                <option value="Especialidad">Especialidad</option>
+                                <option value="urgencia">Urgencia</option>
+                                <option value="otro">Otro</option>
+                              </select>
+                        </p>
+                        <p>
+                            <label for="">Especifique:</label>
+                            <input placeholder="Tipo de Cita" />
+                        </p>
+                        <p>
+                            <label for="">Cuales son sus Sintomas:</label>
+                            <textarea name="textarea" rows="5" cols="50" placeholder="Describa brevemente sus sintomas"></textarea>
+                        </p>
+                        <p>
+                            <label for="">Fecha en la que requiere su cita:</label>
+                            <input type="date" value="2022-01-01" min="2022-01-01" max="2025-12-31" required/>
+                        </p>
+                        <p>
+                            <label for="">Horrario en la que requiere su cita:</label>
+                            <input type="time" name="hora" min="00:00" max="24:00"  required/>
+                        </p>
+                                                
+                        <p class="block">
+                            <button>Enviar Cita</button>
+                        </p>
+                    </form>
+
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+
+    <footer class="footerlink">
+            <div class=" footercontainer">
+                <ul>
+                    <h3>Enlaces de Interes</h3>
+                    <hr>
+                    <li>
+                        <a href="#">Secretaria de Salud Federal</a>
+                    </li>
+                    <li>
+                        <a href="#">Secretaria de Salud Chiapas</a>
+                    </li>                
+                    <li>
+                        <a href="#">Covid-19 y sus Variantes</a>
+                    </li>
+                    <li>
+                        <a href="#">Enfermedades Cronicas</a>
+                    </li>
+                    <li>
+                        <a href="#">Centros de ayuda Social</a>
+                    </li>
+                    <li>
+                        <a href="#">Secretaria de Bienestar social</a>
+                    </li>
+                </ul>
+    
+                <ul>
+                    <h3>Videos de Interes</h3>
+                    <hr>
+                    <li>
+                        <a href="#">Cuerpo y mente saludable - Tips de Salud</a>
+                    </li>
+                    <li>
+                        <a href="#">Sencillos Consejos Para una Vida Sana</a>
+                    </li>                
+                    <li>
+                        <a href="#">Covid-19 y sus Variantes en el mundo</a>
+                    </li>
+                    <li>
+                        <a href="#">Estilo de vida saludable</a>
+                    </li>
+                    <li>
+                        <a href="#">Transtornos alimenticios</a>
+                    </li>
+                    <li>
+                        <a href="#">Cuidados paliativos a enfermos</a>
+                    </li>
+                </ul>
+    
+                <ul>
+                    <h3>Ubicanos</h3>
+                    <hr>
+                    <li>
+                        <p>Av. Primera Norte Oriente #1234, Col. Conocida Tuxtla Gutiérrez, Chiapas, México</p>
+                    </li>               
+                </ul>
+                <ul>
+                    <h3>Como Llegar</h3>
+                    <hr>
+                    <li>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15281.457189083281!2d-93.1478524!3d16.7585416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ecd972d3b862c5%3A0x827919ece5fe8cec!2sEstafeta!5e0!3m2!1ses-419!2smx!4v1652300365275!5m2!1ses-419!2smx" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </li>               
+                </ul>
+    
+                
+    
+    
+    
+    
+            </div>
+    
+    </footer>
+    
+    <footer class="copyright">
+            <p>Derechos Reservados. -Iván Ortiz Ramírez</p>
+    </footer>
+    
+    <script src="/js/main.js">
+    
+    </script>
+</body>
+</html>
